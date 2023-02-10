@@ -1,4 +1,4 @@
-def square_info(side):
+def square_info(side: [int, float]):
     """
         returns (perimeter, area, diagonal) for square
     """

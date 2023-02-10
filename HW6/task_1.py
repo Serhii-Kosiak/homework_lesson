@@ -1,4 +1,4 @@
-def arithmetic(left_operand, right_operand, operation):
+def arithmetic(left_operand: [int, float], right_operand: [int, float], operation: str):
     """
         Apply arithmetic operation for provided left and right operands
     """
