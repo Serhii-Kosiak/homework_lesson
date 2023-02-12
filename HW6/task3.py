@@ -9,7 +9,7 @@ def is_prime(n):
     return True
 
 
-number = 20  # check any input numbers
+number = 20  # check any numbers
 
 if is_prime(number):
     print(f"{number} is a prime number")
