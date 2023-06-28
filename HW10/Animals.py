@@ -1,6 +1,9 @@
+from abc import ABC, abstractmethod
+
+
 class Animals:
     def __init__(self, name: str, gender: str = None, age: int = None):
-        self.__name = name.capitalize()
+        self.__name = name.title()  # private and hide parameter
         self.__gender = gender
         self.__age = age
 
@@ -38,5 +41,17 @@ class Animals:
             raise ValueError('The value should be a int')
 
     def say_hi(self):
-        print('say hi from Animals to everyone')
+        print('say hi from Animals to everyone. I will eat you right now')
 
+    def say_bye(self):  # hide function
+        print('say goodbye to this world :( ')
+
+    def attack(self):  # using hiding function from one call - lion.attack
+        self.say_hi()
+        self.say_bye()
+        print('Lion get attacked you...')
+
+
+if __name__ == '__main__':
+    lion = Animals('Leopold', 'Male', 3)
+    lion.attack()

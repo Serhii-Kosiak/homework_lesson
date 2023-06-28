@@ -1,5 +1,6 @@
 from HW10.Mamals import Mammals
 
+
 class EarthMammals(Mammals):
     def __init__(self, name: str, gender: str = None, age: int = None, cats: bool = True, dogs: True = str):
         super().__init__(name, gender, age)

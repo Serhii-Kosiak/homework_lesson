@@ -2,7 +2,7 @@ from HW10.Animals import Animals
 
 
 class Mammals(Animals):
-    def __init__(self,  name: str, gender: str = None, age: int = None, location: int = None):
+    def __init__(self,  name: str, gender: str = None, age: int = None, location: str = None):
         super().__init__(name, gender, age)
         self.__location = location
 
@@ -17,5 +17,7 @@ class Mammals(Animals):
         else:
             raise ValueError('The value should be a str')
 
-    def say_hi(self):
-        print('say hi from Mammals to everyone')
+
+if __name__ == '__main__':
+    mammals = Mammals('Leopardos', 'Male', 5, 'Africa')
+    print(mammals.__dict__)
